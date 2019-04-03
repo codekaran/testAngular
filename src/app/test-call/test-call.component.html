@@ -1,3 +1,6 @@
 <h1>
   test-call works!
 </h1>
+
+Select a file: <input type="file" #myImg name="myFile" /><br /><br />
+<button (click)="sendImage(myImg.value)">sub</button>

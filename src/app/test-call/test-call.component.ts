@@ -14,4 +14,12 @@ export class TestCallComponent implements OnInit {
       console.log(data);
     });
   }
+  public sendImage(data: File) {
+    console.log("image daaattttaaaa");
+    console.log(data);
+    this.appService.sendImage({ data }).subscribe(doc => {
+      console.log(doc);
+      console.log("got the image");
+    });
+  }
 }

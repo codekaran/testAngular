@@ -11,6 +11,10 @@ export class ServerCallService {
   constructor(private http: HttpClient) {}
   sendCall(): Observable<any> {
     console.log("sending the call");
-    return this.http.get("https://twoserver.herokuapp.com/users");
+    return this.http.get("http://localhost:7000/users");
+  }
+  sendImage(data): Observable<any> {
+    console.log("sending image");
+    return this.http.post("http://localhost:7000/users/image", data);
   }
 }
