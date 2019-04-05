@@ -11,10 +11,10 @@ export class ServerCallService {
   constructor(private http: HttpClient) {}
   sendCall(): Observable<any> {
     console.log("sending the call");
-    return this.http.get("http://localhost:7000/users");
+    return this.http.get("http://139.59.77.99:7000/users");
   }
   sendImage(data): Observable<any> {
     console.log("sending image");
-    return this.http.post("http://localhost:7000/users/image", data);
+    return this.http.post("http://139.59.77.99:7000/users/image", data);
   }
 }
