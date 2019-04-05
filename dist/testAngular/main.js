@@ -165,11 +165,11 @@ var ServerCallService = /** @class */ (function () {
     }
     ServerCallService.prototype.sendCall = function () {
         console.log("sending the call");
-        return this.http.get("http://139.59.77.99:7000/users");
+        return this.http.get("http://ytroom.ml:7000/users");
     };
     ServerCallService.prototype.sendImage = function (data) {
         console.log("sending image");
-        return this.http.post("http://139.59.77.99:7000/users/image", data);
+        return this.http.post("http://ytroom.ml:7000/users/image", data);
     };
     ServerCallService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
